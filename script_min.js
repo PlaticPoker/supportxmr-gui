@@ -1362,12 +1362,7 @@ var api = function(m, key, xid){
 				params = JSON.stringify(params);
 			}
 			
-			if(m === 'net'){
-				xhr.open('GET', 'https://supportxmr.com/api/'+url, true);
-			}else{
-				xhr.open('GET', $Q['api']+url, true);
-			}
-			//xhr.open(method, $Q['api']+url, true);
+xhr.open('GET', $Q['api'] + url, true);
 			xhr.setRequestHeader('Content-Type', 'application/json');
 			
 			if(method === 'POST'){
